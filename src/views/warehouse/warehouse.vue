@@ -99,10 +99,13 @@
               </DxDataGrid>
         </b-overlay>
     </b-card>
-    <SidebarDetailService 
+    <sidebar-detail-service
+        :hasOpen="isOpenSidebar" 
         ref="DetailService"
-    />
-    </div>
+    >
+        <b-nav-item>Link</b-nav-item>
+    </sidebar-detail-service>
+</div>
 </template>
 <script>
 import axios from "axios";
@@ -209,7 +212,8 @@ export default {
                 width: '20%',
                 },
             ],
-            listService: null
+            listService: null,
+            isOpenSidebar: false,
         }
     },
     created() {
@@ -227,8 +231,9 @@ export default {
             }) 
         },
         viewDetailService(item) {
-            console.log(this.$refs.DetailService);
-            this.$refs.DetailService.open()
+            // console.log(this.$refs.DetailService);
+            // this.$refs.DetailService.open()
+            this.isOpenSidebar = true;
         },
         exportExcel() {
             const workbook = new Workbook()
