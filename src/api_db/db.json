@@ -1,0 +1,52 @@
+{
+  "Payment": [
+    {
+      "id": 16,
+      "PaymentCode": 480560,
+      "PaymentDate": "23/09/2022 09:15",
+      "TotalAmount": 51000,
+      "MemberName": "linh",
+      "PhoneNumber": "42421412",
+      "Email": "àasf",
+      "SexCode": "Nữ"
+    }
+  ],
+  "Product": [
+    {
+      "MenuName": "Đồ gia dụng",
+      "id": 1,
+      "ProductTotalPrice": 21000,
+      "ProductName": "Kéo",
+      "ImgUrl": "http://toptek.com.vn/admin/sanpham/large_10_2013_113_Keo-cat-Nguyen-Dinh-12TR.jpg",
+      "Code": "P01",
+      "Quantity": 2
+    },
+    {
+      "MenuName": "Gia vị",
+      "ProductTotalPrice": 50000,
+      "id": 2,
+      "ProductName": "Mì chính",
+      "ImgUrl": "https://minhcaumart.vn/media/com_eshop/products/Mi-Chinh-Miwon-2-Kg.jpg",
+      "Code": "P02",
+      "Quantity": 2
+    },
+    {
+      "MenuName": "Thực phẩm",
+      "id": 3,
+      "ProductTotalPrice": 30000,
+      "ProductName": "Sữa Vinamilk",
+      "ImgUrl": "https://cdn.tgdd.vn/Products/Images/2386/177675/bhx/sua-tuoi-it-duong-vinamilk-100-sua-tuoi-hop-1-lit-202104182335233339.jpg",
+      "Code": "P03",
+      "Quantity": 2
+    },
+    {
+      "MenuName": "Nhu yếu phẩm",
+      "id": 4,
+      "ProductTotalPrice": 30000,
+      "ProductName": "Giấy vệ sinh",
+      "ImgUrl": "https://vanphongphamhanoi.net/wp-content/uploads/2019/01/giay-ve-sinh-anan-loc-10-min.jpg",
+      "Code": "P04",
+      "Quantity": 2
+    }
+  ]
+}
