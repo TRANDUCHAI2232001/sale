@@ -38,6 +38,7 @@
           <div class="p-2">
             <b-button
               variant="outline-primary"
+              @click="addService"
             >
             <i class="fa-sharp fa-solid fa-circle-plus" style="margin:auto"></i>
               <span class="align-middle" style="padding-left:8px">Nhập kho</span>
@@ -99,12 +100,13 @@
               </DxDataGrid>
         </b-overlay>
     </b-card>
-    <sidebar-detail-service
-        :hasOpen="isOpenSidebar" 
+    <SidebarDetailService
         ref="DetailService"
-    >
-        <b-nav-item>Link</b-nav-item>
-    </sidebar-detail-service>
+        :service="serviceSelect"
+        :isDetail="isDetail"
+        :idIndex="idIndex"
+        @event="handleEvent"
+    />
 </div>
 </template>
 <script>
@@ -214,6 +216,9 @@ export default {
             ],
             listService: null,
             isOpenSidebar: false,
+            serviceSelect: null,
+            isDetail: null,
+            idIndex: null
         }
     },
     created() {
@@ -228,12 +233,18 @@ export default {
         async getProductList() {
             await axios.get(`http://localhost:3000/Product`).then(res => {
                 this.listService = res.data
+                this.idIndex = this.listService[this.listService.length - 1 ].id
             }) 
         },
         viewDetailService(item) {
-            // console.log(this.$refs.DetailService);
-            // this.$refs.DetailService.open()
-            this.isOpenSidebar = true;
+            this.isDetail = false
+            this.serviceSelect = item.data
+            this.$refs.DetailService.open()
+        },
+        addService() {
+            this.isDetail = true
+            this.serviceSelect = null
+            this.$refs.DetailService.open()
         },
         exportExcel() {
             const workbook = new Workbook()
@@ -266,6 +277,14 @@ export default {
                 })
             })
         },
+        handleEvent(data) {
+            if(data.type === 'afterUpdateService') {
+                this.getProductList()
+            }
+            if(data.type === 'afterAddService') {
+                this.getProductList()
+            }
+        }
       }
 }
 </script>

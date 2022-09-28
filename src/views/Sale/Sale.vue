@@ -42,6 +42,9 @@
                                 <div class="body-semi-bold">
                                     {{ menuDetail.ProductName }}
                                 </div>
+                                <div class="Quantity">
+                                    SL: {{ menuDetail.Quantity }}
+                                </div>
                                 <div class="img-service">
                                   <img :src="menuDetail.ImgUrl" alt="" style="height:50px;margin-left: auto; margin-right: auto">
                                 </div>
@@ -306,10 +309,12 @@ export default {
       await axios.get(`http://localhost:3000/Product`).then(res => {
         const ProductList = []
         res.data.forEach(x => {
-          ProductList.push({
+          if(!ProductList.find(y =>y.MenuName === x.MenuName)) {
+            ProductList.push({
             MenuName: x.MenuName,
             MenuDetail: res.data.filter(z => z.MenuName === x.MenuName)
           })
+          }
         })
         this.listService = ProductList
         this.allServices = ProductList
@@ -488,6 +493,17 @@ export default {
                 .price {
                   position: absolute;
                   bottom: 8px;
+                  right: 10px;
+                  font-weight: 400;
+                  font-size: 14px;
+                  color: #5d5f65;
+                  del {
+                    color: #adafb6;
+                  }
+                }
+                .Quantity {
+                  position: absolute;
+                  top: 8px;
                   right: 10px;
                   font-weight: 400;
                   font-size: 14px;
