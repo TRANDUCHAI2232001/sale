@@ -211,7 +211,8 @@
                   :key="item"
                   :title="`Mã hóa đơn: ${item.PaymentCode}`"
                   :subtitle="`Tổng: ${formatPrice(item.TotalAmount)}`"
-                  :subtitle2="`Tên khách hàng: ${item.MemberName} - Số điện thoại: ${item.PhoneNumber}`"
+                  :subtitle2="`${item.MemberName}`"
+                  :subtitle3="`${item.PhoneNumber}`"
                   :time="item.PaymentDate"
                   variant="success"
                 />
@@ -273,7 +274,8 @@ export default {
           "PhoneNumber":null,
           "Email":null,
           "SexCode": null
-        }
+        },
+        isExceedQuantity : false
         }
     },
     components: {
@@ -338,6 +340,7 @@ export default {
       }
     },
     selectSevice(menuDetail) {
+      // console.log(menuDetail)
       this.serviceSelect = menuDetail
       this.$refs.AddService.open()
     },
@@ -353,7 +356,7 @@ export default {
     },
     removeService(id) {
       this.items.find((x,index) => {
-        console.log(x,index)
+        // console.log(x,index)
         if(x.id === id) {
           this.items.splice(index,1)
         }
@@ -369,7 +372,7 @@ export default {
     async listPayment() {
       await axios.get(`http://localhost:3000/Payment`).then(res => {
         const paymentTemp =  res.data.sort(function(a, b){
-          if(a.PaymentDate < b.PaymentDate) {
+          if(new Date(a.PaymentDate) < new Date(b.PaymentDate)) {
                 return 1
             } else {
                 return -1
@@ -382,13 +385,22 @@ export default {
     searchPayment() {
       const tmpAllPayment = []
       this.ListAllPayment.forEach(x => {
-        if(String(x.PaymentCode).includes(this.keyWordPayment.toUpperCase()) || x.MemberName.toUpperCase().includes(this.keyWordPayment.toUpperCase()) || x.PhoneNumber.toUpperCase().includes(this.keyWordPayment.toUpperCase())) {
+        if(String(x.PaymentCode).includes(this.keyWordPayment.toUpperCase()) || x.MemberName.toUpperCase().includes(this.keyWordPayment.toUpperCase()) || String(x.PhoneNumber).includes(this.keyWordPayment.toUpperCase())) {
           tmpAllPayment.push(x)
         }
       })
       this.ListPayment = tmpAllPayment
     },
     async Payment() {
+      // console.log(this.items)
+      for (let i = 0; i < this.items.length; i++) {
+        if(this.items[i].Quantity < this.items[i].Amount) {
+          this.isExceedQuantity = true
+          break
+        } else {
+          this.isExceedQuantity = false
+        }
+      }
       this.addPayment.id = this.ListPayment[0].id + 1 
       this.addPayment.PaymentDate = dayjs().format("DD/MM/YYYY HH:mm")
       this.addPayment.TotalAmount = this.SumAllTotalAmout()
@@ -401,15 +413,30 @@ export default {
         useToast().error("Vui lòng chọn ít nhất 1 mặt hàng", {
         timeout: 2000
         });
+      } else if (this.isExceedQuantity){
+        useToast().error("Đã có mặt hàng được chọn đã vượt quá số lượng mặt hàng. Vui lòng kiểm tra lại đơn hàng", {
+        timeout: 2000
+        });
       } else {
         await axios.post(`http://localhost:3000/Payment`,this.addPayment ).then(res => {
           useToast().success("Thành công", {
             timeout: 2000
           });
-          this.listPayment()
-          this.resetForm()
+          for (let i = 0; i < this.items.length; i++) {
+            this.inventoryUpdate(this.items[i])
+          }
+          setTimeout( ()=> {
+            this.getProductList()
+            this.listPayment()
+            this.resetForm()
+          },500)
       })
       }
+    },
+    async inventoryUpdate(data) {
+      await axios.patch(`http://localhost:3000/Product/${data.id}`, {
+            "Quantity": data.Quantity - data.Amount
+        })
     },
     resetForm() {
       this.addPayment =  {

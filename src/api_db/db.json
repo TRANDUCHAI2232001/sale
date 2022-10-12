@@ -26,7 +26,7 @@
       "PaymentDate": "26/09/2022 11:10",
       "TotalAmount": 21000,
       "MemberName": "ádsafsa",
-      "PhoneNumber": null,
+      "PhoneNumber": "",
       "Email": null,
       "SexCode": null
     },
@@ -36,6 +36,536 @@
       "PaymentDate": "27/09/2022 15:53",
       "TotalAmount": 21000,
       "MemberName": "long",
+      "PhoneNumber": "",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 20,
+      "PaymentCode": 990156,
+      "PaymentDate": "28/09/2022 14:06",
+      "TotalAmount": 21000,
+      "MemberName": "a",
+      "PhoneNumber": "",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 21,
+      "PaymentCode": 244640,
+      "PaymentDate": "28/09/2022 14:08",
+      "TotalAmount": 105000,
+      "MemberName": "b",
+      "PhoneNumber": "",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 22,
+      "PaymentCode": 278834,
+      "PaymentDate": "28/09/2022 14:17",
+      "TotalAmount": 42000,
+      "MemberName": "a",
+      "PhoneNumber": "",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 23,
+      "PaymentCode": 926551,
+      "PaymentDate": "28/09/2022 14:23",
+      "TotalAmount": 21000,
+      "MemberName": "a",
+      "PhoneNumber": "",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 24,
+      "PaymentCode": 10373,
+      "PaymentDate": "28/09/2022 14:26",
+      "TotalAmount": 21000,
+      "MemberName": "a",
+      "PhoneNumber": "",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 25,
+      "PaymentCode": 566390,
+      "PaymentDate": "28/09/2022 14:27",
+      "TotalAmount": 21000,
+      "MemberName": "a",
+      "PhoneNumber": "",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 26,
+      "PaymentCode": 563470,
+      "PaymentDate": "28/09/2022 14:27",
+      "TotalAmount": 21000,
+      "MemberName": "a",
+      "PhoneNumber": "",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 27,
+      "PaymentCode": 399886,
+      "PaymentDate": "28/09/2022 14:28",
+      "TotalAmount": 50000,
+      "MemberName": "a",
+      "PhoneNumber": "",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 28,
+      "PaymentCode": 78161,
+      "PaymentDate": "28/09/2022 14:29",
+      "TotalAmount": 50000,
+      "MemberName": "a",
+      "PhoneNumber": "",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 29,
+      "PaymentCode": 25678,
+      "PaymentDate": "28/09/2022 14:30",
+      "TotalAmount": 45000,
+      "MemberName": "yen",
+      "PhoneNumber": "",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 30,
+      "PaymentCode": 160300,
+      "PaymentDate": "28/09/2022 14:30",
+      "TotalAmount": 35000,
+      "MemberName": "aaaa",
+      "PhoneNumber": "",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 31,
+      "PaymentCode": 571500,
+      "PaymentDate": "28/09/2022 14:31",
+      "TotalAmount": 20000,
+      "MemberName": "a",
+      "PhoneNumber": "",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 32,
+      "PaymentCode": 633474,
+      "PaymentDate": "28/09/2022 14:31",
+      "TotalAmount": 40000,
+      "MemberName": "a",
+      "PhoneNumber": "",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 33,
+      "PaymentCode": 632327,
+      "PaymentDate": "28/09/2022 14:32",
+      "TotalAmount": 40000,
+      "MemberName": "a",
+      "PhoneNumber": "",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 34,
+      "PaymentCode": 565155,
+      "PaymentDate": "28/09/2022 14:32",
+      "TotalAmount": 70000,
+      "MemberName": "a",
+      "PhoneNumber": "",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 35,
+      "PaymentCode": 289104,
+      "PaymentDate": "28/09/2022 14:33",
+      "TotalAmount": 70000,
+      "MemberName": "a",
+      "PhoneNumber": "",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 36,
+      "PaymentCode": 971637,
+      "PaymentDate": "28/09/2022 14:34",
+      "TotalAmount": 40000,
+      "MemberName": "a",
+      "PhoneNumber": "",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 37,
+      "PaymentCode": 442180,
+      "PaymentDate": "28/09/2022 14:36",
+      "TotalAmount": 40000,
+      "MemberName": "a",
+      "PhoneNumber": "",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 38,
+      "PaymentCode": 983272,
+      "PaymentDate": "28/09/2022 14:36",
+      "TotalAmount": 40000,
+      "MemberName": "a",
+      "PhoneNumber": "",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 39,
+      "PaymentCode": 304319,
+      "PaymentDate": "28/09/2022 14:38",
+      "TotalAmount": 40000,
+      "MemberName": "a",
+      "PhoneNumber": "",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 40,
+      "PaymentCode": 960942,
+      "PaymentDate": "28/09/2022 14:39",
+      "TotalAmount": 40000,
+      "MemberName": "a",
+      "PhoneNumber": "",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 41,
+      "PaymentCode": 933809,
+      "PaymentDate": "28/09/2022 14:43",
+      "TotalAmount": 40000,
+      "MemberName": "a",
+      "PhoneNumber": "",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 42,
+      "PaymentCode": 313110,
+      "PaymentDate": "28/09/2022 14:43",
+      "TotalAmount": 40000,
+      "MemberName": "a",
+      "PhoneNumber": "",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 43,
+      "PaymentCode": 188494,
+      "PaymentDate": "28/09/2022 14:45",
+      "TotalAmount": 40000,
+      "MemberName": "a",
+      "PhoneNumber": "",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 44,
+      "PaymentCode": 413179,
+      "PaymentDate": "28/09/2022 14:48",
+      "TotalAmount": 40000,
+      "MemberName": "a",
+      "PhoneNumber": "",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 45,
+      "PaymentCode": 481603,
+      "PaymentDate": "28/09/2022 14:48",
+      "TotalAmount": 40000,
+      "MemberName": "a",
+      "PhoneNumber": "",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 46,
+      "PaymentCode": 443104,
+      "PaymentDate": "28/09/2022 14:49",
+      "TotalAmount": 55000,
+      "MemberName": "a",
+      "PhoneNumber": "",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 47,
+      "PaymentCode": 839256,
+      "PaymentDate": "28/09/2022 14:50",
+      "TotalAmount": 55000,
+      "MemberName": "a",
+      "PhoneNumber": "",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 48,
+      "PaymentCode": 354457,
+      "PaymentDate": "28/09/2022 14:51",
+      "TotalAmount": 55000,
+      "MemberName": "a",
+      "PhoneNumber": "",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 49,
+      "PaymentCode": 290222,
+      "PaymentDate": "28/09/2022 14:53",
+      "TotalAmount": 55000,
+      "MemberName": "a",
+      "PhoneNumber": "",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 50,
+      "PaymentCode": 509672,
+      "PaymentDate": "28/09/2022 14:54",
+      "TotalAmount": 55000,
+      "MemberName": "a",
+      "PhoneNumber": "",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 51,
+      "PaymentCode": 111073,
+      "PaymentDate": "28/09/2022 14:54",
+      "TotalAmount": 55000,
+      "MemberName": "a",
+      "PhoneNumber": "",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 52,
+      "PaymentCode": 745704,
+      "PaymentDate": "28/09/2022 14:55",
+      "TotalAmount": 55000,
+      "MemberName": "a",
+      "PhoneNumber": "",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 53,
+      "PaymentCode": 926802,
+      "PaymentDate": "28/09/2022 14:55",
+      "TotalAmount": 175000,
+      "MemberName": "hải",
+      "PhoneNumber": "",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 54,
+      "PaymentCode": 78080,
+      "PaymentDate": "28/09/2022 15:06",
+      "TotalAmount": 226000,
+      "MemberName": "a",
+      "PhoneNumber": "",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 55,
+      "PaymentCode": 122066,
+      "PaymentDate": "28/09/2022 15:07",
+      "TotalAmount": 55000,
+      "MemberName": "a",
+      "PhoneNumber": "",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 56,
+      "PaymentCode": 444894,
+      "PaymentDate": "28/09/2022 15:10",
+      "TotalAmount": 180000,
+      "MemberName": "a",
+      "PhoneNumber": "",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 57,
+      "PaymentCode": 826614,
+      "PaymentDate": "28/09/2022 15:15",
+      "TotalAmount": 70000,
+      "MemberName": "a",
+      "PhoneNumber": "",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 58,
+      "PaymentCode": 296325,
+      "PaymentDate": "28/09/2022 15:15",
+      "TotalAmount": 21000,
+      "MemberName": "a",
+      "PhoneNumber": "",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 59,
+      "PaymentCode": 157863,
+      "PaymentDate": "29/09/2022 15:43",
+      "TotalAmount": 21000,
+      "MemberName": "hải",
+      "PhoneNumber": "08967214912",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 60,
+      "PaymentCode": 380642,
+      "PaymentDate": "30/09/2022 09:37",
+      "TotalAmount": 45000,
+      "MemberName": "laam",
+      "PhoneNumber": "4523523532",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 61,
+      "PaymentCode": 631954,
+      "PaymentDate": "04/10/2022 09:40",
+      "TotalAmount": 21000,
+      "MemberName": "chi manh",
+      "PhoneNumber": "243423",
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 62,
+      "PaymentCode": 107740,
+      "PaymentDate": "07/10/2022 10:06",
+      "TotalAmount": 50000,
+      "MemberName": "aaa",
+      "PhoneNumber": null,
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 63,
+      "PaymentCode": 978591,
+      "PaymentDate": "07/10/2022 10:09",
+      "TotalAmount": 40000,
+      "MemberName": "quang linh",
+      "PhoneNumber": null,
+      "Email": null,
+      "SexCode": "Nam"
+    },
+    {
+      "id": 64,
+      "PaymentCode": 913406,
+      "PaymentDate": "09/10/2022 19:03",
+      "TotalAmount": 21000,
+      "MemberName": "aaaa",
+      "PhoneNumber": null,
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 65,
+      "PaymentCode": 835147,
+      "PaymentDate": "09/10/2022 20:06",
+      "TotalAmount": 100000,
+      "MemberName": "Lê Thùy Linh",
+      "PhoneNumber": "0123456789",
+      "Email": null,
+      "SexCode": "Nam"
+    },
+    {
+      "id": 66,
+      "PaymentCode": 244115,
+      "PaymentDate": "10/10/2022 11:02",
+      "TotalAmount": 21000,
+      "MemberName": "aaaa",
+      "PhoneNumber": null,
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 67,
+      "PaymentCode": 487798,
+      "PaymentDate": "10/10/2022 11:02",
+      "TotalAmount": 50000,
+      "MemberName": "dfgsd",
+      "PhoneNumber": null,
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 68,
+      "PaymentCode": 558820,
+      "PaymentDate": "10/10/2022 16:13",
+      "TotalAmount": 40000,
+      "MemberName": "dd",
+      "PhoneNumber": null,
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 69,
+      "PaymentCode": 915664,
+      "PaymentDate": "10/10/2022 16:17",
+      "TotalAmount": 100000,
+      "MemberName": "aaaa",
+      "PhoneNumber": null,
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 70,
+      "PaymentCode": 691893,
+      "PaymentDate": "10/10/2022 16:17",
+      "TotalAmount": 300000,
+      "MemberName": "dffd",
+      "PhoneNumber": null,
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 71,
+      "PaymentCode": 367729,
+      "PaymentDate": "10/10/2022 16:18",
+      "TotalAmount": 50000,
+      "MemberName": "ghh",
+      "PhoneNumber": null,
+      "Email": null,
+      "SexCode": null
+    },
+    {
+      "id": 72,
+      "PaymentCode": 631831,
+      "PaymentDate": "11/10/2022 11:00",
+      "TotalAmount": 60000,
+      "MemberName": "viet",
       "PhoneNumber": null,
       "Email": null,
       "SexCode": null
@@ -49,7 +579,7 @@
       "ProductName": "Kéo",
       "ImgUrl": "http://toptek.com.vn/admin/sanpham/large_10_2013_113_Keo-cat-Nguyen-Dinh-12TR.jpg",
       "Code": "P01",
-      "Quantity": 2
+      "Quantity": 12
     },
     {
       "MenuName": "Gia vị",
@@ -58,7 +588,7 @@
       "ProductName": "Mì chính",
       "ImgUrl": "https://minhcaumart.vn/media/com_eshop/products/Mi-Chinh-Miwon-2-Kg.jpg",
       "Code": "P02",
-      "Quantity": 2
+      "Quantity": 10
     },
     {
       "MenuName": "Thực phẩm",
@@ -67,16 +597,16 @@
       "ProductName": "Sữa Vinamilk",
       "ImgUrl": "https://cdn.tgdd.vn/Products/Images/2386/177675/bhx/sua-tuoi-it-duong-vinamilk-100-sua-tuoi-hop-1-lit-202104182335233339.jpg",
       "Code": "P03",
-      "Quantity": 2
+      "Quantity": 22
     },
     {
       "MenuName": "Nhu yếu phẩm",
       "id": 4,
       "ProductTotalPrice": 30000,
-      "ProductName": "Giấy vệ sinh (Loại 1)",
+      "ProductName": "Giấy vệ sinh",
       "ImgUrl": "https://vanphongphamhanoi.net/wp-content/uploads/2019/01/giay-ve-sinh-anan-loc-10-min.jpg",
       "Code": "P04",
-      "Quantity": "5"
+      "Quantity": 5
     },
     {
       "MenuName": "Gia vị",
@@ -84,7 +614,7 @@
       "ProductName": "Nước mắm",
       "ImgUrl": "https://minhcaumart.vn/media/com_eshop/products/8936017361303.jpg",
       "Code": "P05",
-      "Quantity": "3",
+      "Quantity": 9,
       "id": 5
     },
     {
@@ -93,7 +623,7 @@
       "ProductName": "Hạt nêm",
       "ImgUrl": "https://salt.tikicdn.com/cache/w1200/ts/product/15/89/78/0fb34078f099f12907d1ee24b5fe6b3e.jpg",
       "Code": "P06",
-      "Quantity": "8",
+      "Quantity": 6,
       "id": 6
     },
     {
@@ -102,7 +632,7 @@
       "ProductName": "Bánh",
       "ImgUrl": "https://cf.shopee.vn/file/d20fd2da8ca9a0b0d6bf6d1740f09462",
       "Code": "P08",
-      "Quantity": "4",
+      "Quantity": 18,
       "id": 7
     },
     {
@@ -111,8 +641,56 @@
       "ProductName": "Kẹo dẻo",
       "ImgUrl": "https://minhcaumart.vn/media/com_eshop/products/Keo-Deo-Marshies-Philipines-Tot-Cho-Nguoi-An-Kieng-80Gr.jpg",
       "Code": "P10",
-      "Quantity": "12",
+      "Quantity": "810",
       "id": 8
+    },
+    {
+      "MenuName": "Thực phẩm",
+      "ProductTotalPrice": 25000,
+      "ProductName": "Sữa chua",
+      "ImgUrl": "https://cf.shopee.vn/file/c6fd5cb0a4c439dbb57ee67137a75810",
+      "Code": "P11",
+      "Quantity": 3,
+      "id": 9
+    }
+  ],
+  "GoodsReceipt": [
+    {
+      "GoodsReceiptDate": "",
+      "TotalAmount": 32432423,
+      "id": 1
+    },
+    {
+      "GoodsReceiptDate": "10/10/2022 10:15",
+      "TotalAmount": 50000,
+      "id": 2
+    },
+    {
+      "GoodsReceiptDate": "10/10/2022 10:26",
+      "TotalAmount": 20000,
+      "id": 3
+    },
+    {
+      "GoodsReceiptDate": "09/10/2022",
+      "TotalAmount": 30000,
+      "id": 4
+    },
+    {
+      "GoodsReceiptDate": "09/10/2022",
+      "TotalAmount": 100000,
+      "id": 5
+    },
+    {
+      "GoodsReceiptDate": "10/10/2022",
+      "TotalAmount": 100000,
+      "id": 6
+    }
+  ],
+  "User": [
+    {
+      "userName": "TranDucHai",
+      "passWord": "123456789",
+      "id": 1
     }
   ]
 }

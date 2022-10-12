@@ -34,14 +34,23 @@
             </b-dropdown>
           </div>
         </b-col>
-        <b-col align="right" cols="8">
+        <b-col  cols="8" class="d-flex justify-content-lg-end">
+          <div class="p-2">
+            <b-button
+              variant="outline-primary"
+              @click="updateWareHouse"
+            >
+            <i class="fa-solid fa-cart-plus" style="margin:auto"></i>
+              <span class="align-middle" style="padding-left:8px">Nhập kho</span>
+            </b-button>
+          </div>
           <div class="p-2">
             <b-button
               variant="outline-primary"
               @click="addService"
             >
             <i class="fa-sharp fa-solid fa-circle-plus" style="margin:auto"></i>
-              <span class="align-middle" style="padding-left:8px">Nhập kho</span>
+              <span class="align-middle" style="padding-left:8px">Thêm mặt hàng mới</span>
             </b-button>
           </div>
         </b-col>
@@ -107,6 +116,10 @@
         :idIndex="idIndex"
         @event="handleEvent"
     />
+    <UpdateWareHouse 
+        ref="updateWareHouse"
+        @event="handleEvent"
+    />
 </div>
 </template>
 <script>
@@ -116,6 +129,7 @@ import { Workbook } from 'exceljs'
 import { exportDataGrid } from 'devextreme/excel_exporter'
 import { saveAs } from 'file-saver-es'
 import SidebarDetailService from '@/components/sidebarDetailService.vue'
+import UpdateWareHouse from '@/components/updateWareHouse.vue'
 import {
   DxDataGrid,
   DxColumn,
@@ -140,6 +154,7 @@ import {
   DxColumnFixing,
   DxSelection,
   DxExport,
+  updateWareHouse
 } from 'devextreme-vue/data-grid'
 const dataGridRef = 'tablePackage'
 export default {
@@ -167,7 +182,8 @@ export default {
         DxColumnFixing,
         DxSelection,
         DxExport,
-        SidebarDetailService
+        SidebarDetailService,
+        UpdateWareHouse
     },
     data() {
         return {
@@ -284,6 +300,9 @@ export default {
             if(data.type === 'afterAddService') {
                 this.getProductList()
             }
+        },
+        updateWareHouse() {
+            this.$refs.updateWareHouse.open()
         }
       }
 }

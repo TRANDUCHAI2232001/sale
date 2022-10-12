@@ -27,10 +27,7 @@
           class="mb-0"
           v-text="subtitle"
         />
-        <p
-          class="mb-0"
-          v-text="subtitle2"
-        />
+        <p><i class="fa-solid fa-user"></i> <span style="padding:0 10px 0 5px" v-text="subtitle2"></span> <i class="fa-solid fa-phone"></i><span style="padding:0 10px 0 5px" v-text="subtitle3"></span></p>
       </slot>
     </li>
   </template>
@@ -50,6 +47,10 @@
           default: null,
         },
         subtitle2: {
+          type: String,
+          default: null,
+        },
+        subtitle3: {
           type: String,
           default: null,
         },

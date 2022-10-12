@@ -104,6 +104,7 @@
         <div v-else>
           <div class=" d-flex justify-content-center">
             <img v-if="addService.ImgUrl" :src="addService.ImgUrl" alt="" style="height:250px;margin-left: auto; margin-right: auto">
+            <img v-else src="https://bizweb.dktcdn.net/100/321/653/themes/738854/assets/no-product.jpg?1649839497831" style="height:250px;margin-left: auto; margin-right: auto">
           </div>
           <b-row class="row-productInfo">
             <b-col  class="d-flex input-productname">
