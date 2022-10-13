@@ -21,6 +21,7 @@
             <p>Mật khẩu <span style="color:red">*</span></p>
             <b-form-group>
                 <b-form-input
+                    type="password"
                     v-model="user.passWord"
                     style="width:98%"
                     placeholder="Mật khẩu"
@@ -31,7 +32,7 @@
             <b-button style="width:20%" variant="outline-primary" @click="Login">Đăng nhập</b-button>
            </div>
            <div class="d-flex justify-content-between">
-            <span style="padding:10px;cursor: pointer;">Chưa có tài khoản?</span>
+            <span style="padding:10px;cursor: pointer;" @click="handleClickAddUser">Chưa có tài khoản?</span>
             <span style="padding:10px;cursor: pointer;">Quên mật khẩu?</span>
            </div>
         </div>
@@ -43,6 +44,7 @@
     </div>
 </template>
 <script>
+import AddUserNew from '@/components/addUser.vue'
 import axios from "axios";
 import { useToast } from "vue-toastification";
 export default {
@@ -52,32 +54,37 @@ export default {
                 userName: null,
                 passWord: null,
             },
-            listUser: null
+            listUser: null,
+            openModal: false
         }
     },
+    components: [
+        AddUserNew
+    ],
     created() {
         this.getListUser()
     },
     methods: {
         Login() {
-            this.listUser.forEach(x => {
-                if(x.userName === this.user.userName && x.passWord === this.user.passWord) {
-                    localStorage.setItem('userData',JSON.stringify(this.user))
+            if(this.listUser.filter(x => x.userName === this.user.userName && x.passWord === this.user.passWord).length > 0) {
+                localStorage.setItem('userData',JSON.stringify(this.user))
                     this.$router.push({ name: 'Welcome' })
                     setTimeout(() => {
                     window.location.reload()
                     },100)
-                } else {
-                    useToast().error("Tài khoản hoặc mật khẩu không đúng", {
+            } else {
+                useToast().error("Tài khoản hoặc mật khẩu không đúng", {
                         timeout: 2000
                         });
-                }
-            })
+            }
         },
         async getListUser() {
             await axios.get(` http://localhost:3000/User`).then(res => {
                 this.listUser = res.data
             })
+        },
+        handleClickAddUser() {
+            this.$router.push({ name: 'AddUser' })
         }
     }
     

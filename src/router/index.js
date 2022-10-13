@@ -4,6 +4,7 @@ import Warehouse from '../views/warehouse/warehouse.vue'
 import Revenue from '@/views/Revenue/Revenue.vue'
 import LogIn from '@/components/LogIn.vue'
 import Welcome from '@/components/welcome.vue'
+import AddUser from '@/components/addUser.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -32,6 +33,11 @@ const router = createRouter({
       path: '/Welcome',
       name: 'Welcome',
       component: Welcome
+    },
+    {
+      path: '/AddUser',
+      name: 'AddUser',
+      component: AddUser
     }
   ]
 })

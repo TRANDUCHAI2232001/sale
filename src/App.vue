@@ -4,7 +4,7 @@
     <header v-if="isLogin">
     <div class="d-flex">
       <div class="left-nav">
-      <b-link href="/">
+      <b-link href="/Welcome">
         <img alt="Vue logo" class="logo" src="https://webcanthogiare.com/uploads/post/menu_1570072368051_o_1dm7pm4tfunkt951lovkav144cd.jpg" width="35" height="35" />
         <span style="padding:5px;color: #fff; text-decoration: none !important;">Sale Management</span>
       </b-link>
